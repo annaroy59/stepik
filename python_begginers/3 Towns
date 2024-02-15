@@ -1,0 +1,31 @@
+## Три города
+## Даны названия трех городов. Напишите программу, которая определяет самое короткое и самое длинное название города.
+
+## Формат входных данных
+## На вход программе подаётся названия трех городов, каждое на отдельной строке.
+
+## Формат выходных данных
+## Программа должна вывести самое короткое и длинное название города, каждое на отдельной строке.
+
+## Примечание. Гарантируется, что длины названий всех трех городов различны.
+
+name1 = input()
+name2 = input()
+name3 = input()
+length1 = len(name1)
+length2 = len(name2)
+length3 = len(name3)
+mx = max(length1, length2, length3)
+mn = min(length1, length2, length3)
+if mn == length1:
+    print(name1)
+elif mn == length2:
+    print(name2)
+else:
+    print(name3)
+if mx == length1:
+    print(name1)
+elif mx == length2:
+    print(name2)
+else:
+    print(name3)
